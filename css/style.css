@@ -1,4 +1,15 @@
-/* Style inputs, select elements and textareas */
+/* THIS IS FOR THE NAVIGATION BAR THIS IS FOR THE NAVIGATION BAR THIS IS FOR THE NAVIGATION BAR THIS IS FOR THE NAVIGATION BAR */
+
+
+/* THIS IS FOR THE BODY THIS IS FOR THE BODY THIS IS FOR THE BODY THIS IS FOR THE BODY THIS IS FOR THE BODY THIS IS FOR THE BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+  }
+
+
+/* THIS IS FOR THE FORM/FOOTER THIS IS FOR THE FORM/FOOTER THIS IS FOR THE FORM/FOOTER THIS IS FOR THE FORM/FOOTER */
+/* inputs, select elements and textareas */
 input[type=text], select, textarea{
     width: 100%;
     padding: 12px;
@@ -8,13 +19,13 @@ input[type=text], select, textarea{
     resize: vertical;
   }
   
-  /* Style the label to display next to the inputs */
+  /* label to display next to the inputs */
   label {
     padding: 12px 12px 12px 0;
     display: inline-block;
   }
   
-  /* Style the submit button */
+  /* submit button */
   input[type=submit] {
     background-color: #424242;
     color: white;
@@ -25,11 +36,12 @@ input[type=text], select, textarea{
     float: right;
   }
   
-  /* Style the container */
-  .container {
+  /* container */
+  #contact {
     border-radius: 5px;
-    background-color: #111111;
-    padding: 20px;
+    background-color: #AF9B46;
+    padding: 5rem;
+    width: 50%;
   }
   
   /* Floating column for labels: 25% width */
