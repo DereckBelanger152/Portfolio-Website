@@ -1,0 +1,6 @@
+color palette: 
+vanilla: #DFD6A7
+mustard: #F7CE5B
+earth yellow: #F7B05B
+satin sheen gold: #AF9B46
+licorice: #1F1300

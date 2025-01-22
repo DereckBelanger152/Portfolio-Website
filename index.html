@@ -1,149 +1,183 @@
-<!doctype html>
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
+    <meta name="author" content="Dereck Bélanger">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Mukta:wght@300&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+</head>
 
-  <header> 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Dereck's Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+<body>
+    <div class="container">
+
+        <div class="sidebar">
+            hi
         </div>
-      </div>
-    </nav>
-  </header>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Dereck's Portfolio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
+        <main class="main">
+            <section id="aboutme">
+                <h2>About Me</h2>
+                <p> I started coding after giving myself the challenge to complete Harvard's CS50 course and discovered
+                    a passion for coding because of the endless possibilities and the creativity. What I've discovered
+                    since then, is a way to test myself with the constant evolution of the tech world on top of the fun
+                    there is at creating stuff like web pages, apps and more
+                </p>
+            </section>
 
-  <main>
-    <div id="about-me">
-      <h1>About Me</h1>
-      <p>My name is Dereck and I am passionate about learning. From Snowboarding, MMA, computer science and many more of my hobbies,
-        I aspire to become the best I can be. I am currently a student at Université Laval, Québec studying computer science with
-        a particular interest in machine learning and cloud infrastructure. Looking forward to working together!
-      </p>
+            <section id="accomplishments">
+                <h2>Accomplishments</h2>
+                <div id="CS50">
+                    <h3>Introduction to Computer Science (CS50)</h3>
+                    <h4>Harvard Certification</h4>
+                    <p>This course was hard for me, I started with no knowldege of coding whatsoever but after
+                        many months of grinding and juggling between work, school and extracurricular work, I managed
+                        to get in depth skills in C, python, SQL and much more. Since CS50 is project oriented, I also
+                        built myself a small portfolio while learning.
+                    </p>
+                </div>
+                <div id="CS50S">
+                    <h3>Introduction to Cyber Security (CS50S)</h3>
+                    <h4>Harvard Certification</h4>
+                    <p>In this course, I learnt the basics of cybersecurity. How to secure data, hashing, salts
+                        industry standards regarding levels of security and more. This has helped me be more
+                        professionnal
+                        and safe in my practices when building software.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <section class="section">
+            ho
+        </section>
+        <section class="content">
+            <div class="card-group">
+                <div class="card" id="card1">
+                    <img src="images/readability.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Readability</h5>
+                        <p class="card-text">This CS50 project is a very simple algorithm that tells the user with a
+                            short sample
+                            of text the level of complexity of a book or any text.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 months ago</small></p>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <img src="images/cash.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cash</h5>
+                        <p class="card-text">Coded in C, this project mimics the main behavior of a transaction done
+                            with money on a register. It calculates the easiest cash return for the client.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 5 months ago</small></p>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <img src="images/construction.png" class="card-img-top" alt="vscode overview">
+                    <div class="card-body">
+                        <h5 class="card-title">Final Project</h5>
+                        <p class="card-text">This section is still under construction</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <form action="action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="country" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+            <ul>
+                <li><span class="fa-brands fa-square-facebook"></span></li>
+                <li><span class="fa-brands fa-instagram"></span></li>
+                <li><span class="fa-brands fa-twitter"></span></li>
+                <li>Get in touch!</li>
+            </ul>
+        </footer>
     </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d6973d5988.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+<div id="fleche"><a href=#top>
+        <span class="fa-solid fa-up-long"></span>
+    </a>
+</div>
+</body>
 
-    <div id="skills-mosaic">
-      <h2>Programming Languages</h2>
-      <div class="mosaic-container">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python"/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS"/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML"/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" alt="SQL" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" />
-      </div>
-    </div>
-
-    <div id="projectCarousel">
-      <div id="carouselExampleDark" class="carousel carousel-dark slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </main>
-
-
-    <footer>
-      <div class="container">
-        <form action="action_page.php">
-          <div class="row">
-            <div class="col-25">
-              <label for="fname">First Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="lname">Last Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="country">Country</label>
-            </div>
-            <div class="col-75">
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="subject">Subject</label>
-            </div>
-            <div class="col-75">
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <input type="submit" value="Submit">
-          </div>
-        </form>
-      </div>
-    </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
 </html>
