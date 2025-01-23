@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>Portfolio Website</title>
     <meta name="author" content="Dereck Bélanger">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit-no">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,14 +15,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-</head>
 
 <body>
     <div class="container">
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Dereck's Portfolio</a>
+            <nav class="navbar navbar-expand-lg">
+                <div id="mainHeaderText" class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <span class="primary-color">Dereck's</span> Portfolio
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -107,70 +108,33 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="container" id="contact">
-                <form action="action_page.php">
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="fname">First Name</label>
-                        </div>
-                        <div class="col-75">
-                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="lname">Last Name</label>
-                        </div>
-                        <div class="col-75">
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="country">Country</label>
-                        </div>
-                        <div class="col-75">
-                            <select id="country" name="country">
-                                <option value="australia">Australia</option>
-                                <option value="canada">Canada</option>
-                                <option value="usa">USA</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="subject">Subject</label>
-                        </div>
-                        <div class="col-75">
-                            <textarea id="subject" name="subject" placeholder="Write something.."
-                                style="height:200px"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
-            </div>
-
-            <ul>
-                <li><span class="fa-brands fa-square-facebook"></span></li>
-                <li><span class="fa-brands fa-instagram"></span></li>
-                <li><span class="fa-brands fa-twitter"></span></li>
-                <li>Get in touch!</li>
-            </ul>
-        </footer>
+        <section class="contact" id="contact">
+            <h2 class="contact__heading section-heading">Contact</h2>
+            <p class="contact__text">Have a question or want to work together? Leave your details and I'll get back to
+                you as soon as possible.</p>
+            <form class="contact__form" action="https://formspree.io/f/xdoprgpv" method="POST">
+                <input class="contact__form-name" name="name" placeholder="Name" />
+                <input class="contact__form-email" type="email" name="_replyto" placeholder="Email" />
+                <textarea class="contact__form-message" name="message" placeholder="Message"></textarea>
+                <div class="contact__form-error-submit">
+                    <button type="button" class="contact__form-submit-2 project__live-2"
+                        id="form-submit">Submit</button>
+                </div>
+            </form>
+        </section>
     </div>
+
+    <div id="fleche">
+        <a href=#top>
+            <span class="fa-solid fa-up-long"></span>
+        </a>
+    </div>
+
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/d6973d5988.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-</body>
-<div id="fleche"><a href=#top>
-        <span class="fa-solid fa-up-long"></span>
-    </a>
-</div>
 </body>
 
 </html>
