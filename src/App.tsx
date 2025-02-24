@@ -18,7 +18,7 @@ function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [typedText, setTypedText] = useState("");
-  const fullText = "Building elegant solutions to complex problems.";
+  const fullText = "Hi! Welcome to my personal portfolio website";
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Typing effect
@@ -79,28 +79,25 @@ function App() {
 
   const projects = [
     {
-      title: "Project 1",
-      description: "A full-stack web application built with React and Node.js",
-      tags: ["React", "Node.js", "MongoDB"],
+      title: "AI Club Website",
+      description: "A reactive website to showcase my university's AI club",
+      tags: ["React", "Tailwind", "JavaScript"],
       link: "#",
-      image:
-        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+      image: "",
     },
     {
-      title: "Project 2",
-      description: "Mobile-first responsive design implementation",
-      tags: ["React Native", "TypeScript"],
+      title: "Change calculator (Register)",
+      description: "A simple change calculator simulation for cash registers",
+      tags: ["C"],
       link: "#",
-      image:
-        "https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=800&q=80",
+      image: "",
     },
     {
-      title: "Project 3",
-      description: "Algorithm visualization platform",
-      tags: ["JavaScript", "Data Structures"],
+      title: "Canon Video Game",
+      description: "Simple canon/target video game made with physics",
+      tags: ["Python"],
       link: "#",
-      image:
-        "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80",
+      image: "",
     },
   ];
 
@@ -118,7 +115,7 @@ function App() {
         <nav className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-clip-text text-transparent">
-              John Doe
+              Dereck Bélanger
             </h1>
 
             {/* Desktop Navigation */}
@@ -199,7 +196,7 @@ function App() {
               </button>
               <div className="flex gap-4 items-center">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/DereckBelanger152"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-purple-400 transition-colors transform hover:scale-110"
@@ -207,7 +204,7 @@ function App() {
                   <Github size={24} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/dereck-bélanger-437259338/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-pink-400 transition-colors transform hover:scale-110"
@@ -215,7 +212,7 @@ function App() {
                   <Linkedin size={24} />
                 </a>
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:dereckblanger@gmail.com"
                   className="hover:text-blue-400 transition-colors transform hover:scale-110"
                 >
                   <Mail size={24} />
@@ -283,23 +280,115 @@ function App() {
             <div className="bg-[#12121a] rounded-lg p-6 border border-purple-900/30 hover:border-pink-500/50 hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300">
               <div className="flex justify-between items-start mb-4">
                 <div>
-                  <h4 className="text-xl font-semibold">
-                    Software Development Intern
-                  </h4>
-                  <p className="text-gray-400">Tech Company Inc.</p>
+                  <h4 className="text-xl font-semibold">Web Manager</h4>
+                  <p className="text-gray-400">Laval University's AI Club </p>
                 </div>
-                <span className="text-gray-400">Summer 2023</span>
+                <span className="text-gray-400">Winter 2025 - Current</span>
               </div>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li className="hover:text-pink-400 transition-colors">
-                  Developed and maintained web applications using React and
-                  Node.js
+                  Developed and maintained the Club d'Intelligence Artificelle
+                  de l'Université Laval's website using React, Tailwind CSS, JS
+                  and more
                 </li>
                 <li className="hover:text-pink-400 transition-colors">
-                  Collaborated with senior developers on large-scale projects
+                  Collaborated with different project teams to coordinate
+                  website updates and new features
                 </li>
                 <li className="hover:text-pink-400 transition-colors">
                   Implemented responsive designs and improved user experience
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="space-y-8 mt-8">
+            <div className="bg-[#12121a] rounded-lg p-6 border border-purple-900/30 hover:border-pink-500/50 hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h4 className="text-xl font-semibold">
+                    Personal Computer Building
+                  </h4>
+                  <p className="text-gray-400">Self Employed</p>
+                </div>
+                <span className="text-gray-400">2015 - 2020</span>
+              </div>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li className="hover:text-pink-400 transition-colors">
+                  Built computers from scratch for clients with specific needs
+                  and budgets
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Academics Section */}
+        <section id="experience" className="py-20">
+          <h3 className="text-3xl font-bold mb-12 flex items-center gap-3">
+            <BookOpen className="text-pink-400" /> Academics
+          </h3>
+          <div className="space-y-8">
+            <div className="bg-[#12121a] rounded-lg p-6 border border-purple-900/30 hover:border-pink-500/50 hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h4 className="text-xl font-semibold">
+                    Bachelor's degree in Computer Science
+                  </h4>
+                  <p className="text-gray-400">Laval University, Québec</p>
+                </div>
+                <span className="text-gray-400">Fall 2024 - Fall 2028</span>
+              </div>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li className="hover:text-pink-400 transition-colors">
+                  Honors in Machine Learning and Artificial Intelligence
+                </li>
+                <li className="hover:text-pink-400 transition-colors">
+                  Participated in FlappyEEG through the AI club. A mind
+                  controlled game that utilizes EEG signals and machine learning
+                  to control a character (insert official link when website is
+                  deplyed through the right domain)
+                </li>
+                <li className="hover:text-pink-400 transition-colors">
+                  Involvment in the Cybersecurity Club
+                </li>
+              </ul>
+            </div>
+            <div className="bg-[#12121a] rounded-lg p-6 border border-purple-900/30 hover:border-pink-500/50 hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h4 className="text-xl font-semibold">
+                    CS50 (Computer Science course)
+                  </h4>
+                  <p className="text-gray-400">Harvard University</p>
+                </div>
+                <span className="text-gray-400">Fall 2025 - Fall 2026</span>
+              </div>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li className="hover:text-pink-400 transition-colors">
+                  Project oriented course with a focus on problem solving and
+                  algorithmic thinking
+                </li>
+                <li className="hover:text-pink-400 transition-colors">
+                  C, Python, HTML, CSS, JavaScript, SQL, and more
+                </li>
+              </ul>
+            </div>
+            <div className="bg-[#12121a] rounded-lg p-6 border border-purple-900/30 hover:border-pink-500/50 hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h4 className="text-xl font-semibold">
+                    CS50S (Cybersecurity course)
+                  </h4>
+                  <p className="text-gray-400">Harvard University</p>
+                </div>
+                <span className="text-gray-400">Fall 2023 - Fall 2025</span>
+              </div>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li className="hover:text-pink-400 transition-colors">
+                  Cybersecurity awareness and best practices
+                </li>
+                <li className="hover:text-pink-400 transition-colors">
+                  Encription, network security, and more
                 </li>
               </ul>
             </div>
@@ -314,17 +403,18 @@ function App() {
           <div className="bg-[#12121a] rounded-lg p-8 border border-purple-900/30 hover:border-blue-500/50 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300">
             <div className="max-w-3xl">
               <p className="text-gray-300 leading-relaxed mb-6 hover:text-gray-100 transition-colors">
-                I'm a Computer Science student passionate about software
-                development and problem-solving. My journey in tech started with
-                simple Python scripts, and now I'm building full-stack
-                applications and exploring the fascinating world of artificial
-                intelligence.
+                I'm a Computer Science student that loves to learn. I recently
+                discovered a passion for web development but I strive to become
+                as proficient as possible as many areas of computer science as I
+                can. I also have interests in machine learning, infrastructure,
+                and security.
               </p>
               <p className="text-gray-300 leading-relaxed hover:text-gray-100 transition-colors">
-                When I'm not coding, you can find me contributing to open-source
-                projects, participating in hackathons, or learning about new
-                technologies. I believe in writing clean, maintainable code and
-                creating intuitive user experiences.
+                When I'm not coding, you can find me learning about the latest
+                technologies (I really enjoy pretending I understand the news in
+                quantum computing), playing video games, doing MMA or playing
+                chess. I've always been a competitive person and I love to
+                challenge myself in everything I do.
               </p>
             </div>
           </div>
@@ -335,7 +425,7 @@ function App() {
       <footer className="bg-[#0a0a0f] border-t border-purple-900/30">
         <div className="max-w-6xl mx-auto px-4 py-8">
           <p className="text-center text-gray-400">
-            © 2024 John Doe. Built with React & Tailwind CSS.
+            © 2024 Dereck Bélanger - All rights reserved
           </p>
         </div>
       </footer>
@@ -349,7 +439,7 @@ function App() {
             : "opacity-0 translate-y-16"
         }`}
       >
-        <ArrowUp size={24} />
+        <ArrowUp size={16} />
       </button>
     </div>
   );
