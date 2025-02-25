@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import {
   Github,
   Linkedin,
@@ -11,6 +12,7 @@ import {
   ArrowUp,
   Menu,
   X,
+  Backpack,
 } from "lucide-react";
 
 function App() {
@@ -325,7 +327,7 @@ function App() {
         {/* Academics Section */}
         <section id="experience" className="py-20">
           <h3 className="text-3xl font-bold mb-12 flex items-center gap-3">
-            <BookOpen className="text-pink-400" /> Academics
+            <Backpack className="text-pink-400" /> Academics
           </h3>
           <div className="space-y-8">
             <div className="bg-[#12121a] rounded-lg p-6 border border-purple-900/30 hover:border-pink-500/50 hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300">
@@ -441,6 +443,7 @@ function App() {
       >
         <ArrowUp size={16} />
       </button>
+      <Analytics></Analytics>
     </div>
   );
 }
