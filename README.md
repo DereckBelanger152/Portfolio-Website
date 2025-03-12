@@ -1,31 +1,31 @@
-# 🚀 Mon Portfolio
+# 🚀 My Portfolio
 
-Bienvenue sur le repository de mon portfolio personnel ! Ce site met en avant mes **projets**, **expériences professionnelles**, ainsi que mes **certificats et formations**.
+Welcome to the repository of my personal portfolio! This website showcases my **projects**, **work experience**, as well as my **certifications and education**.
 
-🔗 **[Voir le site en ligne](https://dereckbelanger.me)**
-
----
-
-## 📌 Fonctionnalités
-
-- **Présentation interactive** de mon parcours
-- **Affichage de mes projets**
-- **Certifications et formations**
-- **Informations de contact**
+🔗 **[View the live site](https://dereckbelanger.me)**
 
 ---
 
-## 🏗️ Technologies utilisées
+## 📌 Features
 
-- **React + Vite** 
-- **TypeScript** 
-- **Tailwind CSS** 
-- **Vercel** (hébergement) 
+- **Interactive presentation** of my journey  
+- **Showcase of my projects**  
+- **Certifications and education**  
+- **Contact information**  
+
+---
+
+## 🏗️ Technologies Used
+
+- **React + Vite**  
+- **TypeScript**  
+- **Tailwind CSS**  
+- **Vercel** (hosting)  
 
 ---
 
 ## 👤 Contact
 
-Si tu veux échanger sur un projet ou collaborer, tu peux me contacter via mon site ou par email. 🚀  
-📧 **Email :** [dereckblanger@gmail.com](mailto:dereckblanger@gmail.com)  
-💼 **LinkedIn :** (https://www.linkedin.com/in/dereck-bélanger-437259338/)
+If you’d like to discuss a project or collaborate, feel free to reach out via my website or email. 🚀  
+📧 **Email:** [dereckblanger@gmail.com](mailto:dereckblanger@gmail.com)  
+💼 **LinkedIn:** [linkedin.com/in/dereck-bélanger-437259338](https://www.linkedin.com/in/dereck-bélanger-437259338/)
