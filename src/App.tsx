@@ -37,7 +37,7 @@ function App() {
   // Scroll spy
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "projects", "experience", "about"];
+      const sections = ["home", "projects", "experience", "academics", "about"];
       const scrollPosition = window.scrollY + 100;
 
       sections.forEach((sectionId) => {
@@ -107,6 +107,7 @@ function App() {
     { id: "home", label: "Home" },
     { id: "projects", label: "Projects" },
     { id: "experience", label: "Experience" },
+    { id: "academics", label: "Academics" },
     { id: "about", label: "About" },
   ];
 
@@ -223,7 +224,6 @@ function App() {
             </div>
           </div>
         </section>
-
         {/* Projects Section */}
         <section id="projects" className="py-20">
           <h3 className="text-3xl font-bold mb-12 flex items-center gap-3">
@@ -325,7 +325,7 @@ function App() {
         </section>
 
         {/* Academics Section */}
-        <section id="experience" className="py-20">
+        <section id="academics" className="py-20">
           <h3 className="text-3xl font-bold mb-12 flex items-center gap-3">
             <Backpack className="text-pink-400" /> Academics
           </h3>
