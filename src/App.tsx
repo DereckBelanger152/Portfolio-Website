@@ -82,17 +82,17 @@ function App() {
   const projects = [
     {
       title: "AI Club Website",
-      description: "A reactive website to showcase my university's AI club",
+      description: "I am the webmaster for the AI Club at Laval University",
       tags: ["React", "Tailwind", "JavaScript"],
-      link: "#",
-      image: "",
+      link: "https://eeg-siteweb.vercel.app",
+      image: "cia_presentation.png",
     },
     {
-      title: "Change calculator (Register)",
-      description: "A simple change calculator simulation for cash registers",
-      tags: ["C"],
-      link: "#",
-      image: "",
+      title: "EvoWeb",
+      description: "Created my own web development company",
+      tags: ["React", "Tailwind", "JavaScript", "Vue"],
+      link: "https://evoweb-website.vercel.app",
+      image: "./public/evoweb_logo.png",
     },
     {
       title: "Canon Video Game",
@@ -282,7 +282,7 @@ function App() {
             <div className="bg-[#12121a] rounded-lg p-6 border border-purple-900/30 hover:border-pink-500/50 hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300">
               <div className="flex justify-between items-start mb-4">
                 <div>
-                  <h4 className="text-xl font-semibold">Web Manager</h4>
+                  <h4 className="text-xl font-semibold">Web Master</h4>
                   <p className="text-gray-400">Laval University's AI Club </p>
                 </div>
                 <span className="text-gray-400">Winter 2025 - Current</span>
