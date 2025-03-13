@@ -82,24 +82,27 @@ function App() {
   const projects = [
     {
       title: "AI Club Website",
-      description: "I am the webmaster for the AI Club at Laval University",
+      description:
+        "I am the webmaster and only developer of the AI Club's website. it showcases the club's projects and events",
       tags: ["React", "Tailwind", "JavaScript"],
       link: "https://eeg-siteweb.vercel.app",
       image: "cia_presentation.png",
     },
     {
       title: "EvoWeb",
-      description: "Created my own web development company",
+      description:
+        "Evoweb is a web development company that I founded. I offer top quality websites for a fraction of the price",
       tags: ["React", "Tailwind", "JavaScript", "Vue"],
       link: "https://evoweb-website.vercel.app",
-      image: "./public/evoweb_logo.png",
+      image: "/evoweb_logo.png",
     },
     {
-      title: "Canon Video Game",
-      description: "Simple canon/target video game made with physics",
+      title: "Mind Controlled Video Game",
+      description:
+        "FlapEEG is a remake of the classic Flappy Bird game. It is controlled by thought through EEG signals. Made in collaboration with the whole FlapEEG Team",
       tags: ["Python"],
-      link: "#",
-      image: "",
+      link: "https://github.com/cia-ulaval/FlapEEG_interface_v1",
+      image: "flapeeg.gif",
     },
   ];
 
