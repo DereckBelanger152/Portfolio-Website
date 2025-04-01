@@ -14,6 +14,7 @@ import {
   X,
   Backpack,
 } from "lucide-react";
+import { motion } from "framer-motion";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -84,23 +85,23 @@ function App() {
       title: "AI Club Website",
       description:
         "I am the webmaster and only developer of the AI Club's website. it showcases the club's projects and events",
-      tags: ["React", "Tailwind", "JavaScript"],
-      link: "https://eeg-siteweb.vercel.app",
+      tags: ["React", "TailwindCSS", "JavaScript"],
+      link: "https://vercel.com/dereckbelanger152s-projects/cia_laval",
       image: "cia_presentation.png",
     },
     {
       title: "EvoWeb",
       description:
         "Evoweb is a web development company that I founded. I offer top quality websites for a fraction of the price",
-      tags: ["React", "Tailwind", "JavaScript", "Vue"],
-      link: "https://evoweb-website.vercel.app",
+      tags: ["TypeScript", "TailwindCSS", "HTML", "JavaScript"],
+      link: "https://www.evoweb.ca",
       image: "/evoweb_logo.png",
     },
     {
       title: "Mind Controlled Video Game",
       description:
         "FlapEEG is a remake of the classic Flappy Bird game. It is controlled by thought through EEG signals. Made in collaboration with the whole FlapEEG Team",
-      tags: ["Python"],
+      tags: ["Python", "Jupyter"],
       link: "https://github.com/cia-ulaval/FlapEEG_interface_v1",
       image: "flapeeg.gif",
     },
@@ -117,7 +118,12 @@ function App() {
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-gray-100">
       {/* Header */}
-      <header className="fixed top-0 w-full bg-[#0a0a0f]/90 backdrop-blur-sm border-b border-purple-900/30 z-50">
+      <motion.header
+        className="fixed top-0 w-full bg-[#0a0a0f]/90 backdrop-blur-sm border-b border-purple-900/30 z-50"
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <nav className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-clip-text text-transparent">
@@ -169,14 +175,17 @@ function App() {
             </div>
           )}
         </nav>
-      </header>
+      </motion.header>
 
       {/* Main Content */}
       <main className="pt-20 pb-12 max-w-6xl mx-auto px-4">
         {/* Hero Section */}
-        <section
+        <motion.section
           id="home"
           className="min-h-[80vh] flex flex-col justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
         >
           <div className="space-y-6">
             <h2 className="text-5xl font-bold">
@@ -226,9 +235,16 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
+        </motion.section>
         {/* Projects Section */}
-        <section id="projects" className="py-20">
+        <motion.section
+          id="projects"
+          className="py-20"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <h3 className="text-3xl font-bold mb-12 flex items-center gap-3">
             <Code2 className="text-purple-400" /> Projects
           </h3>
@@ -274,10 +290,17 @@ function App() {
               </div>
             ))}
           </div>
-        </section>
+        </motion.section>
 
         {/* Experience Section */}
-        <section id="experience" className="py-20">
+        <motion.section
+          id="experience"
+          className="py-20"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <h3 className="text-3xl font-bold mb-12 flex items-center gap-3">
             <BookOpen className="text-pink-400" /> Experience
           </h3>
@@ -325,10 +348,17 @@ function App() {
               </ul>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Academics Section */}
-        <section id="academics" className="py-20">
+        <motion.section
+          id="academics"
+          className="py-20"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <h3 className="text-3xl font-bold mb-12 flex items-center gap-3">
             <Backpack className="text-pink-400" /> Academics
           </h3>
@@ -345,13 +375,13 @@ function App() {
               </div>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li className="hover:text-pink-400 transition-colors">
-                  Honors in Machine Learning and Artificial Intelligence
-                </li>
-                <li className="hover:text-pink-400 transition-colors">
                   Participated in FlappyEEG through the AI club. A mind
                   controlled game that utilizes EEG signals and machine learning
                   to control a character (insert official link when website is
                   deplyed through the right domain)
+                </li>
+                <li className="hover:text-pink-400 transition-colors">
+                  Involvment in the Artificial Intelligence Club
                 </li>
                 <li className="hover:text-pink-400 transition-colors">
                   Involvment in the Cybersecurity Club
@@ -398,10 +428,17 @@ function App() {
               </ul>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* About Section */}
-        <section id="about" className="py-20">
+        <motion.section
+          id="about"
+          className="py-20"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           <h3 className="text-3xl font-bold mb-12 flex items-center gap-3">
             <User className="text-blue-400" /> About Me
           </h3>
@@ -423,29 +460,36 @@ function App() {
               </p>
             </div>
           </div>
-        </section>
+        </motion.section>
       </main>
 
       {/* Footer */}
-      <footer className="bg-[#0a0a0f] border-t border-purple-900/30">
+      <motion.footer
+        className="bg-[#0a0a0f] border-t border-purple-900/30"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="max-w-6xl mx-auto px-4 py-8">
           <p className="text-center text-gray-400">
             © 2024 Dereck Bélanger - All rights reserved
           </p>
         </div>
-      </footer>
+      </motion.footer>
 
       {/* Scroll to Top Button */}
-      <button
+      <motion.button
         onClick={scrollToTop}
         className={`fixed bottom-8 right-8 bg-gradient-to-r from-purple-600 to-blue-600 p-3 rounded-full shadow-lg transition-all duration-300 hover:from-purple-500 hover:to-blue-500 ${
           showScrollTop
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-16"
         }`}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
       >
         <ArrowUp size={16} />
-      </button>
+      </motion.button>
       <Analytics></Analytics>
     </div>
   );
