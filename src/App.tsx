@@ -84,9 +84,9 @@ function App() {
     {
       title: "AI Club Website",
       description:
-        "I am the webmaster and only developer of the AI Club's website. it showcases the club's projects and events",
+        "I am the webmaster and only developer of the AI Club's website. it showcases the club's projects and events - IN CONSTRUCTION!!!",
       tags: ["React", "TailwindCSS", "JavaScript"],
-      link: "https://vercel.com/dereckbelanger152s-projects/cia_laval",
+      link: "https://github.com/cia-ulaval/EEG_siteweb",
       image: "cia_presentation.png",
     },
     {
@@ -104,6 +104,14 @@ function App() {
       tags: ["Python", "Jupyter"],
       link: "https://github.com/cia-ulaval/FlapEEG_interface_v1",
       image: "flapeeg.gif",
+    },
+    {
+      title: "SwipePaw",
+      description:
+        "A mobile app that allows you to swipe on different pets for fun (like Tinder), but also for shelters to potentially find adoptive families for their pets - IN CONSTRUCTION!!!",
+      tags: ["Expo", "TypeScript", "Firebase", "And More!"],
+      link: "https://github.com/DereckBelanger152/SwipePaw",
+      image: "swipepaw.png",
     },
   ];
 
