@@ -84,7 +84,7 @@ function App() {
     {
       title: "AI Club Website",
       description:
-        "I am the webmaster and only developer of the AI Club's website. it showcases the club's projects and events - IN CONSTRUCTION!!!",
+        "I am the webmaster and only developer of the AI Club's website. it showcases the club's projects and events (In development)",
       tags: ["React", "TailwindCSS", "JavaScript"],
       link: "https://github.com/cia-ulaval/EEG_siteweb",
       image: "cia_presentation.png",
@@ -108,7 +108,7 @@ function App() {
     {
       title: "SwipePaw",
       description:
-        "A mobile app that allows you to swipe on different pets for fun (like Tinder), but also for shelters to potentially find adoptive families for their pets - IN CONSTRUCTION!!!",
+        "A mobile app that allows you to swipe on different pets for fun (like Tinder), but also for shelters to potentially find adoptive families for their pets (In development)",
       tags: ["Expo", "TypeScript", "Firebase", "And More!"],
       link: "https://github.com/DereckBelanger152/SwipePaw",
       image: "swipepaw.png",
