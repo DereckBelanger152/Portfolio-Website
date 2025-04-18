@@ -104,6 +104,7 @@ function App() {
       tags: ["Python", "Jupyter"],
       link: "https://github.com/cia-ulaval/FlapEEG_interface_v1",
       image: "flapeeg.gif",
+      highlight: "Project nominated at Gala de la Vie Étudiante",
     },
     {
       title: "SwipePaw",
@@ -273,6 +274,11 @@ function App() {
                   <h4 className="text-xl font-semibold mb-3">
                     {project.title}
                   </h4>
+                  {project.highlight && (
+                    <p className="text-sm font-bold text-yellow-400 mb-2 animate-pulse">
+                      {project.highlight}
+                    </p>
+                  )}
                   <p className="text-gray-400 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, i) => (
@@ -316,8 +322,10 @@ function App() {
             <div className="bg-[#12121a] rounded-lg p-6 border border-purple-900/30 hover:border-pink-500/50 hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300">
               <div className="flex justify-between items-start mb-4">
                 <div>
-                  <h4 className="text-xl font-semibold">Web Master</h4>
-                  <p className="text-gray-400">Laval University's AI Club </p>
+                  <h4 className="text-xl font-semibold">
+                    Laval University's AI Club
+                  </h4>
+                  <p className="text-gray-400">Official Webmaster </p>
                 </div>
                 <span className="text-gray-400">Winter 2025 - Current</span>
               </div>
@@ -341,8 +349,42 @@ function App() {
             <div className="bg-[#12121a] rounded-lg p-6 border border-purple-900/30 hover:border-pink-500/50 hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300">
               <div className="flex justify-between items-start mb-4">
                 <div>
+                  <h4 className="text-xl font-semibold">Evoweb</h4>
+                  <p className="text-gray-400">Owner and creator</p>
+                </div>
+                <span className="text-gray-400">2025 - Current</span>
+              </div>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li className="hover:text-pink-400 transition-colors">
+                  Built my SASS company from scratch
+                </li>
+                <li className="hover:text-pink-400 transition-colors">
+                  Client acquisition and retention strategies
+                </li>
+                <li className="hover:text-pink-400 transition-colors">
+                  Full-cycle web project management: From client needs analysis
+                  to live deployment: wireframing, development, SEO, hosting,
+                  and client follow-up
+                </li>
+                <li className="hover:text-pink-400 transition-colors">
+                  Branding and visual identity development Built the Evoweb
+                  brand, including logo design, social media presence, and
+                  business card creation.
+                </li>
+                <li className="hover:text-pink-400 transition-colors">
+                  Business process creation and documentation Designed
+                  structured packages, estimates, and workflows to streamline
+                  project delivery.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="space-y-8 mt-8">
+            <div className="bg-[#12121a] rounded-lg p-6 border border-purple-900/30 hover:border-pink-500/50 hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300">
+              <div className="flex justify-between items-start mb-4">
+                <div>
                   <h4 className="text-xl font-semibold">
-                    Personal Computer Building
+                    Custom Personal Computer Building
                   </h4>
                   <p className="text-gray-400">Self Employed</p>
                 </div>
@@ -352,6 +394,11 @@ function App() {
                 <li className="hover:text-pink-400 transition-colors">
                   Built computers from scratch for clients with specific needs
                   and budgets
+                </li>
+                <li className="hover:text-pink-400 transition-colors">
+                  Developed expertise in component selection and optimization,
+                  creating systems that outperformed pre-built alternatives by
+                  20-30% at comparable price points
                 </li>
               </ul>
             </div>
@@ -385,14 +432,13 @@ function App() {
                 <li className="hover:text-pink-400 transition-colors">
                   Participated in FlappyEEG through the AI club. A mind
                   controlled game that utilizes EEG signals and machine learning
-                  to control a character (insert official link when website is
-                  deplyed through the right domain)
+                  to control a character
                 </li>
                 <li className="hover:text-pink-400 transition-colors">
-                  Involvment in the Artificial Intelligence Club
+                  Member of the Artificial Intelligence Club
                 </li>
                 <li className="hover:text-pink-400 transition-colors">
-                  Involvment in the Cybersecurity Club
+                  Member of the Cybersecurity Club
                 </li>
               </ul>
             </div>
@@ -432,6 +478,29 @@ function App() {
                 </li>
                 <li className="hover:text-pink-400 transition-colors">
                   Encription, network security, and more
+                </li>
+              </ul>
+            </div>
+            <div className="bg-[#12121a] rounded-lg p-6 border border-purple-900/30 hover:border-pink-500/50 hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h4 className="text-xl font-semibold">
+                    Proficient in AI tools
+                  </h4>
+                  <p className="text-gray-400">
+                    Cursor, Copilot, ChatGPT, Claude
+                  </p>
+                </div>
+                <span className="text-gray-400"></span>
+              </div>
+              <ul className="list-disc list-inside text-gray-300 space-y-2">
+                <li className="hover:text-pink-400 transition-colors">
+                  Learnt optimal prompt engineering techniques to get the best
+                  results
+                </li>
+                <li className="hover:text-pink-400 transition-colors">
+                  Learnt to use AI tools to improve my productivity and
+                  versatility
                 </li>
               </ul>
             </div>
@@ -480,7 +549,7 @@ function App() {
       >
         <div className="max-w-6xl mx-auto px-4 py-8">
           <p className="text-center text-gray-400">
-            © 2024 Dereck Bélanger - All rights reserved
+            © 2025 Dereck Bélanger - All rights reserved
           </p>
         </div>
       </motion.footer>
