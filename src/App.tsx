@@ -107,6 +107,14 @@ function App() {
       highlight: "Project nominated at Gala de la Vie Étudiante",
     },
     {
+      title: "RoastMyCode",
+      description:
+        "An AI powered code review tool that roasts your code. It uses OpenAI's API to analyze your code and come up with funny comments (soon to be in app format)",
+      tags: ["OpenAI API", "React", "TailwindCSS", "TypeScript"],
+      link: "https://github.com/DereckBelanger152/RoastMyCode",
+      image: "roastmycode.png",
+    },
+    {
       title: "SwipePaw",
       description:
         "A mobile app that allows you to swipe on different pets for fun (like Tinder), but also for shelters to potentially find adoptive families for their pets (In development)",
