@@ -84,7 +84,7 @@ function App() {
     {
       title: "AI Club Website",
       description:
-        "I am the webmaster and only developer of the AI Club's website. it showcases the club's projects and events (In development)",
+        "Re-engineered the club’s entire web presence with a multilingual, SEO-optimized site, real-time event and project feeds, and an automated CI/CD pipeline that consistently delivers 99-percentile load times.",
       tags: ["React", "TailwindCSS", "JavaScript"],
       link: "https://github.com/cia-ulaval/EEG_siteweb",
       image: "cia_presentation.png",
@@ -92,8 +92,8 @@ function App() {
     {
       title: "EvoWeb",
       description:
-        "Evoweb is a web development company that I founded. I offer top quality websites for a fraction of the price",
-      tags: ["TypeScript", "TailwindCSS", "HTML", "JavaScript"],
+        "Founder of my own web studio that ships ultra-fast static sites for local businesses; built a component-driven design system, automated CI/CD with Lighthouse gating (98 + performance) and structured-data SEO",
+      tags: ["TypeScript", "Google Analytics", "Figma", "Vercel"],
       link: "https://www.evoweb.ca",
       image: "/evoweb_logo.png",
     },
@@ -109,7 +109,7 @@ function App() {
     {
       title: "RoastMyCode",
       description:
-        "An AI powered code review tool that roasts your code. It uses OpenAI's API to analyze your code and come up with funny comments (soon to be in app format)",
+        "Launched a browser playground that ingests code snippets, runs silent static analysis, and has an LLM deliver razor-sharp yet actionable roasts;",
       tags: ["OpenAI API", "React", "TailwindCSS", "TypeScript"],
       link: "https://github.com/DereckBelanger152/RoastMyCode",
       image: "roastmycode.png",
@@ -117,10 +117,50 @@ function App() {
     {
       title: "SwipePaw",
       description:
-        "A mobile app that allows you to swipe on different pets for fun (like Tinder), but also for shelters to potentially find adoptive families for their pets (In development)",
+        "Prototyped a swipe-based mobile app where pet owners and shelters match animals for playdates or adoptions; integrated real-time chat, and an SPCA-synced adoption flow",
       tags: ["Expo", "TypeScript", "Firebase", "And More!"],
       link: "https://github.com/DereckBelanger152/SwipePaw",
       image: "swipepaw.png",
+    },
+    {
+      title: "InsightLeak",
+      description:
+        "A full-stack privacy-audit platform. Real-time ingestion processes, risk reports and actionable tips. Designed for sub-second queries and live demos, InsightLeak showcases advanced data engineering, LLM prompting, and ethical-tech storytelling in one sleek package.",
+      tags: ["Python", "Neo4j", "React", "TailwindCSS", "TypeScript"],
+      link: "https://github.com/DereckBelanger152/InsightLeak",
+      image: "insightleak.png",
+    },
+    {
+      title: "PRDoctor",
+      description:
+        "A GitHub App built with Probot, ESLint, SonarQube, and OpenAI. PRDoctor containers (Docker) run in GitHub Actions, crunch static-analysis findings, micro-benchmarks, and a Green-Algorithms CO₂ estimate to issue a 0-100 “Health Score” on every pull request while GPT-4o writes reviewer-ready feedback. Scores and historical trends are stored in PostgreSQL.",
+      tags: ["Probot", "Github Apps", "SQL", "And More!"],
+      link: "",
+      image: "probot.png",
+    },
+    {
+      title: "Book Rental System",
+      description:
+        "Small project created in a team for my python class. It is a book rental system that allows users to rent books, return them, and view their rental history. It uses a simple command line interface and stores data in a JSON file.",
+      tags: ["Python", "JSON", "Command Line"],
+      link: "https://github.com/DereckBelanger152/Book-location-Interface",
+      image: "book.png",
+    },
+    {
+      title: "Small Akinator Game",
+      description:
+        "A small Akinator game created in Python. It uses a simple command line interface and allows users to play a game of Akinator by answering questions about a character. The caracters are stored in a JSON file and the game uses a simple algorithm to guess the character.",
+      tags: ["Python", "JSON", "Command Line"],
+      link: "https://github.com/DereckBelanger152/Akinator-remake",
+      image: "akinator.jpg",
+    },
+    {
+      title: "Canon Game",
+      description:
+        "Small game created in Python. It is a simple game where the player has to shoot a target with a canon. The game uses a simple command line interface and allows users to play the game by entering commands.",
+      tags: ["Python"],
+      link: "",
+      image: "canon.png",
     },
   ];
 
@@ -265,52 +305,79 @@ function App() {
           <h3 className="text-3xl font-bold mb-12 flex items-center gap-3">
             <Code2 className="text-purple-400" /> Projects
           </h3>
+          <div className="mb-8 flex items-center gap-3 bg-purple-900/10 border border-purple-700/30 rounded-lg px-4 py-3">
+            <span className="text-purple-400 font-bold text-lg">ℹ️</span>
+            <span className="text-gray-200">
+              Please note: Many of these projects are actively maintained and
+              continuously improved. I am committed to delivering high-quality
+              solutions and regularly update my work. I enjoy having many
+              diverse projects to work on, none of them will be abandoned!
+            </span>
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="group bg-[#12121a] rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-purple-900/30 hover:border-purple-500/50 hover:shadow-purple-500/10"
-              >
-                <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                </div>
-                <div className="p-6">
-                  <h4 className="text-xl font-semibold mb-3">
-                    {project.title}
-                  </h4>
-                  {project.highlight && (
-                    <p className="text-sm font-bold text-yellow-400 mb-2 animate-pulse">
-                      {project.highlight}
-                    </p>
-                  )}
-                  <p className="text-gray-400 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.map((tag, i) => (
-                      <span
-                        key={i}
-                        className="px-3 py-1 bg-purple-900/20 rounded-full text-sm hover:bg-purple-600/30 transition-colors"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  <a
-                    href={project.link}
-                    className="text-purple-400 hover:text-purple-300 flex items-center gap-2 group"
-                  >
-                    View Project
-                    <ExternalLink
-                      size={16}
-                      className="group-hover:translate-x-1 transition-transform"
+            {projects.map((project, index) => {
+              // Determine if the bubble should be shown
+              const showBubble =
+                project.title !== "Mind Controlled Video Game" &&
+                project.title !== "Small Akinator Game" &&
+                project.title !== "Book Rental System" &&
+                project.title !== "Canon Game" &&
+                project.title !== "EvoWeb";
+              return (
+                <div
+                  key={index}
+                  className="group bg-[#12121a] rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-purple-900/30 hover:border-purple-500/50 hover:shadow-purple-500/10"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    {/* Work in Progress Bubble */}
+                    {showBubble && (
+                      <div className="absolute top-3 right-3 z-10">
+                        <span className="bg-[#232336] text-gray-300 text-xs font-semibold px-3 py-1 rounded-full border border-purple-900/50 shadow-sm opacity-80">
+                          Work in Progress
+                        </span>
+                      </div>
+                    )}
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
-                  </a>
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-xl font-semibold mb-3">
+                      {project.title}
+                    </h4>
+                    {project.highlight && (
+                      <p className="text-sm font-bold text-yellow-400 mb-2 animate-pulse">
+                        {project.highlight}
+                      </p>
+                    )}
+                    <p className="text-gray-400 mb-4">{project.description}</p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.tags.map((tag, i) => (
+                        <span
+                          key={i}
+                          className="px-3 py-1 bg-purple-900/20 rounded-full text-sm hover:bg-purple-600/30 transition-colors"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                    <a
+                      href={project.link}
+                      className="text-purple-400 hover:text-purple-300 flex items-center gap-2 group"
+                    >
+                      View Project
+                      <ExternalLink
+                        size={16}
+                        className="group-hover:translate-x-1 transition-transform"
+                      />
+                    </a>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </motion.section>
 
@@ -538,10 +605,11 @@ function App() {
               </p>
               <p className="text-gray-300 leading-relaxed hover:text-gray-100 transition-colors">
                 When I'm not coding, you can find me learning about the latest
-                technologies (I really enjoy pretending I understand the news in
-                quantum computing), playing video games, doing MMA or playing
-                chess. I've always been a competitive person and I love to
-                challenge myself in everything I do.
+                technologies (thanks Fireship!), playing video games, doing MMA
+                (recently had a seminar with the one and only Muay Thai world
+                champion, Jean-Charles Skarbowsky) or playing chess. I've always
+                been a competitive person and I love to challenge myself in
+                everything I do.
               </p>
             </div>
           </div>
