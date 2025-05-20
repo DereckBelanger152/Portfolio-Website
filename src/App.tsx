@@ -82,12 +82,12 @@ function App() {
 
   const projects = [
     {
-      title: "AI Club Website",
+      title: "PRDoctor",
       description:
-        "Re-engineered the club’s entire web presence with a multilingual, SEO-optimized site, real-time event and project feeds, and an automated CI/CD pipeline that consistently delivers 99-percentile load times.",
-      tags: ["React", "TailwindCSS", "JavaScript"],
-      link: "https://github.com/cia-ulaval/EEG_siteweb",
-      image: "cia_presentation.png",
+        "A GitHub App built with Probot, ESLint, SonarQube, and OpenAI. PRDoctor containers (Docker) run in GitHub Actions, crunch static-analysis findings, micro-benchmarks, and a Green-Algorithms CO₂ estimate to issue a 0-100 “Health Score” on every pull request while GPT-4o writes reviewer-ready feedback. Scores and historical trends are stored in PostgreSQL.",
+      tags: ["Probot", "Github Apps", "SQL", "And More!"],
+      link: "",
+      image: "probot.png",
     },
     {
       title: "EvoWeb",
@@ -107,20 +107,20 @@ function App() {
       highlight: "Project nominated at Gala de la Vie Étudiante",
     },
     {
-      title: "RoastMyCode",
-      description:
-        "Launched a browser playground that ingests code snippets, runs silent static analysis, and has an LLM deliver razor-sharp yet actionable roasts;",
-      tags: ["OpenAI API", "React", "TailwindCSS", "TypeScript"],
-      link: "https://github.com/DereckBelanger152/RoastMyCode",
-      image: "roastmycode.png",
-    },
-    {
       title: "SwipePaw",
       description:
         "Prototyped a swipe-based mobile app where pet owners and shelters match animals for playdates or adoptions; integrated real-time chat, and an SPCA-synced adoption flow",
       tags: ["Expo", "TypeScript", "Firebase", "And More!"],
       link: "https://github.com/DereckBelanger152/SwipePaw",
       image: "swipepaw.png",
+    },
+    {
+      title: "AI Club Website",
+      description:
+        "Re-engineered the club’s entire web presence with a multilingual, SEO-optimized site, real-time event and project feeds, and an automated CI/CD pipeline that consistently delivers 99-percentile load times.",
+      tags: ["React", "TailwindCSS", "JavaScript"],
+      link: "https://github.com/cia-ulaval/EEG_siteweb",
+      image: "cia_presentation.png",
     },
     {
       title: "InsightLeak",
@@ -131,12 +131,20 @@ function App() {
       image: "insightleak.png",
     },
     {
-      title: "PRDoctor",
+      title: "RoastMyCode",
       description:
-        "A GitHub App built with Probot, ESLint, SonarQube, and OpenAI. PRDoctor containers (Docker) run in GitHub Actions, crunch static-analysis findings, micro-benchmarks, and a Green-Algorithms CO₂ estimate to issue a 0-100 “Health Score” on every pull request while GPT-4o writes reviewer-ready feedback. Scores and historical trends are stored in PostgreSQL.",
-      tags: ["Probot", "Github Apps", "SQL", "And More!"],
+        "Launched a browser playground that ingests code snippets, runs silent static analysis, and has an LLM deliver razor-sharp yet actionable roasts;",
+      tags: ["OpenAI API", "React", "TailwindCSS", "TypeScript"],
+      link: "https://github.com/DereckBelanger152/RoastMyCode",
+      image: "roastmycode.png",
+    },
+    {
+      title: "Canon Game",
+      description:
+        "Small game created in Python. It is a simple game where the player has to shoot a target with a canon. The game uses a simple command line interface and allows users to play the game by entering commands.",
+      tags: ["Python"],
       link: "",
-      image: "probot.png",
+      image: "canon.png",
     },
     {
       title: "Book Rental System",
@@ -153,14 +161,6 @@ function App() {
       tags: ["Python", "JSON", "Command Line"],
       link: "https://github.com/DereckBelanger152/Akinator-remake",
       image: "akinator.jpg",
-    },
-    {
-      title: "Canon Game",
-      description:
-        "Small game created in Python. It is a simple game where the player has to shoot a target with a canon. The game uses a simple command line interface and allows users to play the game by entering commands.",
-      tags: ["Python"],
-      link: "",
-      image: "canon.png",
     },
   ];
 
