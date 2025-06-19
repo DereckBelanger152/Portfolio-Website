@@ -38,7 +38,14 @@ function App() {
   // Scroll spy
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "projects", "experience", "academics", "about"];
+      const sections = [
+        "home",
+        "featured-projects",
+        "projects",
+        "experience",
+        "academics",
+        "about",
+      ];
       const scrollPosition = window.scrollY + 100;
 
       sections.forEach((sectionId) => {
@@ -80,55 +87,59 @@ function App() {
     setIsMenuOpen(false);
   };
 
-  const projects = [
+  const featuredProjects = [
     {
       title: "PRDoctor",
       description:
-        "A GitHub App built with Probot, ESLint, SonarQube, and OpenAI. PRDoctor containers (Docker) run in GitHub Actions, crunch static-analysis findings, micro-benchmarks, and a Green-Algorithms CO₂ estimate to issue a 0-100 “Health Score” on every pull request while GPT-4o writes reviewer-ready feedback. Scores and historical trends are stored in PostgreSQL.",
+        "A GitHub App built with Probot, ESLint, SonarQube, and OpenAI. PRDoctor containers (Docker) run in GitHub Actions, crunch static-analysis findings, micro-benchmarks, and a Green-Algorithms CO₂ estimate to issue a 0-100 Health Score on every pull request while GPT-4o writes reviewer-ready feedback. Scores and historical trends are stored in PostgreSQL.",
       tags: ["Probot", "Github Apps", "SQL", "And More!"],
-      link: "",
+      link: "https://github.com/DereckBelanger152/prdoctor",
       image: "probot.png",
     },
     {
-      title: "EvoWeb",
+      title: "AI Club Website",
       description:
-        "Founder of my own web studio that ships ultra-fast static sites for local businesses; built a component-driven design system, automated CI/CD with Lighthouse gating (98 + performance) and structured-data SEO",
-      tags: ["TypeScript", "Google Analytics", "Figma", "Vercel"],
-      link: "https://www.evoweb.ca",
-      image: "/evoweb_logo.png",
+        "Redesigned the entire web stack for the AI Club, delivering a fully multilingual, SEO-first site with sub-1s Time to Interactive, 92+ Lighthouse scores, and 92% accessibility compliance. Built with React and deployed on Vercel with automated CI/CD pipelines, cutting deployment time by 90% and ensuring zero downtime.",
+      tags: ["React", "TailwindCSS", "JavaScript"],
+      link: "https://cia.ift.ulaval.ca",
+      image: "cia_presentation.png",
     },
     {
       title: "Mind Controlled Video Game",
       description:
-        "FlapEEG is a remake of the classic Flappy Bird game. It is controlled by thought through EEG signals. Made in collaboration with the whole FlapEEG Team",
+        "Recreated Flappy Bird as a neurocontrolled game using EEG signals, achieving real-time control with <200ms latency. Initially driven by eye-blink detection, with AI/ML-based thought recognition currently in development. Built in collaboration with the FlapEEG team to showcase accessible brain–computer interaction.",
       tags: ["Python", "Jupyter"],
       link: "https://github.com/cia-ulaval/FlapEEG_interface_v1",
       image: "flapeeg.gif",
       highlight: "Project nominated at Gala de la Vie Étudiante",
     },
+  ];
+
+  type Project = {
+    title: string;
+    description: string;
+    tags: string[];
+    link: string;
+    image: string;
+    highlight?: string;
+  };
+
+  const projects: Project[] = [
     {
       title: "SwipePaw",
       description:
-        "Prototyped a swipe-based mobile app where pet owners and shelters match animals for playdates or adoptions; integrated real-time chat, and an SPCA-synced adoption flow",
+        "Prototyped a swipe-based mobile app connecting pet owners and shelters for playdates or adoptions. Built with React Native and Firebase, featuring real-time chat, persistent sessions, email/password authentication, and an SPCA-synced adoption workflow.",
       tags: ["Expo", "TypeScript", "Firebase", "And More!"],
       link: "https://github.com/DereckBelanger152/SwipePaw",
       image: "swipepaw.png",
     },
     {
-      title: "AI Club Website",
+      title: "EvoWeb",
       description:
-        "Re-engineered the club’s entire web presence with a multilingual, SEO-optimized site, real-time event and project feeds, and an automated CI/CD pipeline that consistently delivers 99-percentile load times.",
-      tags: ["React", "TailwindCSS", "JavaScript"],
-      link: "https://github.com/cia-ulaval/EEG_siteweb",
-      image: "cia_presentation.png",
-    },
-    {
-      title: "InsightLeak",
-      description:
-        "A full-stack privacy-audit platform. Real-time ingestion processes, risk reports and actionable tips. Designed for sub-second queries and live demos, InsightLeak showcases advanced data engineering, LLM prompting, and ethical-tech storytelling in one sleek package.",
-      tags: ["Python", "Neo4j", "React", "TailwindCSS", "TypeScript"],
-      link: "https://github.com/DereckBelanger152/InsightLeak",
-      image: "insightleak.png",
+        "Founder of my own web studio that ships ultra-fast static sites for local businesses; built a component-driven design system, automated CI/CD (98 + performance) and structured-data SEO. Business process creation and documentation: Designed structured packages, estimates, and workflows to streamline project delivery.",
+      tags: ["TypeScript", "Google Analytics", "Figma", "Vercel"],
+      link: "https://www.evoweb.ca",
+      image: "/evoweb_logo.png",
     },
     {
       title: "RoastMyCode",
@@ -138,35 +149,11 @@ function App() {
       link: "https://github.com/DereckBelanger152/RoastMyCode",
       image: "roastmycode.png",
     },
-    {
-      title: "Canon Game",
-      description:
-        "Small game created in Python. It is a simple game where the player has to shoot a target with a canon. The game uses a simple command line interface and allows users to play the game by entering commands.",
-      tags: ["Python"],
-      link: "",
-      image: "canon.png",
-    },
-    {
-      title: "Book Rental System",
-      description:
-        "Small project created in a team for my python class. It is a book rental system that allows users to rent books, return them, and view their rental history. It uses a simple command line interface and stores data in a JSON file.",
-      tags: ["Python", "JSON", "Command Line"],
-      link: "https://github.com/DereckBelanger152/Book-location-Interface",
-      image: "book.png",
-    },
-    {
-      title: "Small Akinator Game",
-      description:
-        "A small Akinator game created in Python. It uses a simple command line interface and allows users to play a game of Akinator by answering questions about a character. The caracters are stored in a JSON file and the game uses a simple algorithm to guess the character.",
-      tags: ["Python", "JSON", "Command Line"],
-      link: "https://github.com/DereckBelanger152/Akinator-remake",
-      image: "akinator.jpg",
-    },
   ];
 
   const navItems = [
     { id: "home", label: "Home" },
-    { id: "projects", label: "Projects" },
+    { id: "featured-projects", label: "Projects" },
     { id: "experience", label: "Experience" },
     { id: "academics", label: "Academics" },
     { id: "about", label: "About" },
@@ -257,7 +244,7 @@ function App() {
             </p>
             <div className="flex gap-4">
               <button
-                onClick={() => scrollToSection("projects")}
+                onClick={() => scrollToSection("featured-projects")}
                 className="px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg hover:from-purple-500 hover:to-blue-500 transition-all duration-300 flex items-center gap-2 group"
               >
                 View Projects
@@ -293,6 +280,71 @@ function App() {
             </div>
           </div>
         </motion.section>
+        {/* Featured Projects Section */}
+        <motion.section
+          id="featured-projects"
+          className="py-20"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <h3 className="text-3xl font-bold mb-12 flex items-center gap-3 pt-10">
+            <Code2 className="text-yellow-400" /> Featured Projects
+          </h3>
+
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            {featuredProjects.map((project, index) => (
+              <div
+                key={index}
+                className="group bg-gradient-to-br from-[#12121a] to-[#1a1a2e] rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-yellow-600/30 hover:border-yellow-400/60 hover:shadow-yellow-400/20 transform hover:-translate-y-2"
+              >
+                <div className="relative h-56 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="p-8">
+                  <h4 className="text-2xl font-bold mb-3 text-yellow-300">
+                    {project.title}
+                  </h4>
+                  {project.highlight && (
+                    <p className="text-sm font-bold text-yellow-400 mb-3 animate-pulse">
+                      {project.highlight}
+                    </p>
+                  )}
+                  <p className="text-gray-300 mb-6 leading-relaxed">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.tags.map((tag, i) => (
+                      <span
+                        key={i}
+                        className="px-3 py-1 bg-yellow-600/20 border border-yellow-600/30 rounded-full text-sm text-yellow-300 hover:bg-yellow-600/30 transition-colors"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <a
+                    href={project.link}
+                    className="text-yellow-400 hover:text-yellow-300 flex items-center gap-2 group/link font-semibold"
+                  >
+                    View Project
+                    <ExternalLink
+                      size={18}
+                      className="group-hover/link:translate-x-1 transition-transform"
+                    />
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.section>
+
         {/* Projects Section */}
         <motion.section
           id="projects"
@@ -303,7 +355,7 @@ function App() {
           transition={{ duration: 0.8 }}
         >
           <h3 className="text-3xl font-bold mb-12 flex items-center gap-3">
-            <Code2 className="text-purple-400" /> Projects
+            <Code2 className="text-purple-400" /> More Projects
           </h3>
           <div className="mb-8 flex items-center gap-3 bg-purple-900/10 border border-purple-700/30 rounded-lg px-4 py-3">
             <span className="text-purple-400 font-bold text-lg">ℹ️</span>
@@ -320,10 +372,8 @@ function App() {
               // Determine if the bubble should be shown
               const showBubble =
                 project.title !== "Mind Controlled Video Game" &&
-                project.title !== "Small Akinator Game" &&
-                project.title !== "Book Rental System" &&
-                project.title !== "Canon Game" &&
-                project.title !== "EvoWeb";
+                project.title !== "EvoWeb" &&
+                project.title !== "AI Club Website";
               return (
                 <div
                   key={index}
