@@ -99,7 +99,7 @@ function App() {
     {
       title: "AI Club Website",
       description:
-        "Redesigned the entire web stack for the AI Club, delivering a fully multilingual, SEO-first site with sub-1s Time to Interactive, 92+ Lighthouse scores, and 92% accessibility compliance. Built with React and deployed on Vercel with automated CI/CD pipelines, cutting deployment time by 90% and ensuring zero downtime.",
+        "Redesigned the entire web stack for the AI Club, delivering a fully multilingual, Open Source, SEO-first site with sub-1s Time to Interactive, 92+ Lighthouse scores, and 92% accessibility compliance. Built with React and deployed on Vercel with automated CI/CD pipelines, cutting deployment time by 90% and ensuring zero downtime.",
       tags: ["React", "TailwindCSS", "JavaScript"],
       link: "https://cia.ift.ulaval.ca",
       image: "cia_presentation.png",
